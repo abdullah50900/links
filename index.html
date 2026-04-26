@@ -1,0 +1,189 @@
+ <!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah IT Tech | Social Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #ffd700; /* رەنگێ زێڕین بۆ وێنەیی ژی */
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* مەسافەیا ناڤبەرا دوگمەیان */
+        }
+
+        /* دروستکرنا کاریگەریا لیدا زێڕین یا دزڤڕیت */
+        .btn-wrapper {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 4px; /* ستوورییا هێلا زێڕین */
+            transition: transform 0.3s ease;
+        }
+
+        .btn-wrapper:hover {
+            transform: scale(1.05); /* دەمێ ماوسی دبەیە سەر، هندەک مەزن دبیت */
+        }
+
+        /* ئەڤە ئەو پەرچەیە کو دزڤڕیت */
+        .btn-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent, 
+                transparent, 
+                transparent, 
+                #ffc400 /* رەنگێ زێڕین - دشێی بگۆهڕی بۆ هەر رەنگەکێ دی */
+            );
+            animation: spin 2.5s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* دیزاینا دوگمەیێ ب خۆ یێ ل ناڤەراستێ */
+        .link-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #121212; /* رەنگێ پشتی یێ تاری دا لیدا زێڕین دیار بیت */
+            border-radius: 10px;
+            padding: 16px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            z-index: 1; /* دا نڤیسین ل سەر لیدێ دیار بیت */
+        }
+
+        .link-card i {
+            position: absolute;
+            left: 20px;
+            font-size: 1.4rem;
+        }
+
+        /* رەنگێن لۆگۆیان ل دەمێ مانەوە */
+        .link-card .fa-tiktok { color: #ff0050; }
+        .link-card .fa-instagram { color: #e1306c; }
+        .link-card .fa-facebook { color: #1877f2; }
+        .link-card .fa-youtube { color: #ff0000; }
+        .link-card .fa-snapchat { color: #fffc00; }
+        .link-card .fa-discord { color: #5865f2; }
+        .link-card .fa-telegram { color: #0088cc; }
+        .link-card .fa-whatsapp { color: #25d366; }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="abdullah.png.jpg" alt="Abdullah IT Tech" class="profile-pic">
+        <h1>Abdullah kucher </h1>
+        
+    </div>
+ <div class="links-container">
+        <div class="btn-wrapper">
+            <a href="https://www.tiktok.com/@abdullah7.7.3?_r=1&_t=ZS-95o8hJH9dQ5" class="link-card">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="https://www.instagram.com/a.i.kucher.7?igsh=NHVtMWVkYjdyMHZ0" class="link-card">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="https://www.facebook.com/share/18QkfqivrJ/" class="link-card">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+
+        <!-- <div class="btn-wrapper">
+            <a href="لینکێ_یوتیوب" class="link-card">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+        </div> -->
+
+        <!-- <div class="btn-wrapper">
+            <a href="لینکێ_سناپچات" class="link-card">
+                <i class="fab fa-snapchat"></i> Snapchat
+            </a>
+        </div> -->
+        <!-- 
+        <div class="btn-wrapper">
+            <a href="لینکێ_دیسکۆرد" class="link-card">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+        </div> -->
+
+        <div class="btn-wrapper"> 
+            <a href="https://t.me/abdullah5090" class="link-card">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            </div> 
+
+        <!-- <div class="btn-wrapper">
+            <a href="https://wa.me/ژمارا_تە" class="link-card">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div> -->
+    </div>
+
+s
+
+        
+</body>
+</html>
